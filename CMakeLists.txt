@@ -166,28 +166,28 @@ install(
     ARCHIVE   DESTINATION "${CMAKE_INSTALL_LIBDIR}"
 )
 
-install(
-    EXPORT ${PROJECT_NAME}
-    DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
-    FILE ${PROJECT_NAME}Targets.cmake
-    COMPONENT Devel
-)
+# install(
+#     EXPORT ${PROJECT_NAME}
+#     DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
+#     FILE ${PROJECT_NAME}Targets.cmake
+#     COMPONENT Devel
+# )
 
 
-install(
-    FILES       ${PUBLIC_HEADERS}
-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-    COMPONENT   Devel
-    OPTIONAL
-)
+# install(
+#     FILES       ${PUBLIC_HEADERS}
+#     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+#     COMPONENT   Devel
+#     OPTIONAL
+# )
 
-# Generate a CMake file into the installation, to easily use the library
-install(
-    EXPORT      ${PROJECT_NAME}
-    DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
-    COMPONENT   Devel
-    OPTIONAL
-)
+# # Generate a CMake file into the installation, to easily use the library
+# install(
+#     EXPORT      ${PROJECT_NAME}
+#     DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
+#     COMPONENT   Devel
+#     OPTIONAL
+# )
 
 
 
@@ -209,13 +209,13 @@ write_basic_package_version_file(
     COMPATIBILITY SameMajorVersion
 )
 
-install(
-    FILES
-        ${CMAKE_CURRENT_BINARY_DIR}/qmqttConfig.cmake
-        ${CMAKE_CURRENT_BINARY_DIR}/qmqttConfigVersion.cmake
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}
-    COMPONENT   Devel
-)
+# install(
+#     FILES
+#         ${CMAKE_CURRENT_BINARY_DIR}/qmqttConfig.cmake
+#         ${CMAKE_CURRENT_BINARY_DIR}/qmqttConfigVersion.cmake
+#     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}
+#     COMPONENT   Devel
+# )
 
 
 # ===================================================================
