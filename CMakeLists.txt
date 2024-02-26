@@ -8,7 +8,7 @@ include( GNUInstallDirs ) # needed to define vars used in install() directives.
 # ===================================================================
 # Configurable options
 
-option( ${PROJECT_NAME}_SHARED "Build a shared library.  Turn off for static." ON )
+option( ${PROJECT_NAME}_SHARED "Build a shared library.  Turn off for static." OFF )
 option( ${PROJECT_NAME}_WEBSOCKETS "Enable WebSockets for MQTT" OFF )
 option( ${PROJECT_NAME}_SSL "Enable SSL support for MQTT" ON )
 
